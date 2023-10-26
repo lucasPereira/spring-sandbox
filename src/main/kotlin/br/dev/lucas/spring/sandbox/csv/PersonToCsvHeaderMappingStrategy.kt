@@ -1,5 +1,6 @@
-package br.dev.lucas.spring.sandbox
+package br.dev.lucas.spring.sandbox.csv
 
+import br.dev.lucas.spring.sandbox.Person
 import com.opencsv.CSVReader
 import com.opencsv.bean.MappingStrategy
 

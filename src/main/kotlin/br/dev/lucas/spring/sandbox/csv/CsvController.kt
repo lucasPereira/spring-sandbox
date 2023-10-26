@@ -1,6 +1,6 @@
-package br.dev.lucas.spring.sandbox
+package br.dev.lucas.spring.sandbox.csv
 
-import com.opencsv.bean.HeaderColumnNameMappingStrategyBuilder
+import br.dev.lucas.spring.sandbox.Person
 import com.opencsv.bean.StatefulBeanToCsvBuilder
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
@@ -10,10 +10,10 @@ import java.io.OutputStreamWriter
 import java.util.*
 
 @RestController
-class HelloController {
+class CsvController {
 
-    @GetMapping("/")
-    fun hello(): ResponseEntity<StreamingResponseBody> {
+    @GetMapping("/csv")
+    fun get(): ResponseEntity<StreamingResponseBody> {
         val stream = StreamingResponseBody { outputStream ->
             val writer = OutputStreamWriter(outputStream)
             val lucas = Person("Lucas", Date())
