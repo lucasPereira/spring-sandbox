@@ -1,1 +1,1 @@
-rootProject.name = "spring.sandbox"
+rootProject.name = "springsandbox"

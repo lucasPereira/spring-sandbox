@@ -1,6 +1,5 @@
-package br.dev.lucas.spring.sandbox.csv
+package br.dev.lucas.springsandbox.csv
 
-import br.dev.lucas.spring.sandbox.Person
 import com.opencsv.bean.StatefulBeanToCsvBuilder
 import org.springframework.http.ResponseEntity
 import org.springframework.web.bind.annotation.GetMapping
@@ -20,8 +19,6 @@ class CsvController {
             val silva = Person("Silva", Date())
             val people = listOf(lucas, silva)
             val beanToCsvBuilder = StatefulBeanToCsvBuilder<Person>(writer)
-
-            beanToCsvBuilder.withMappingStrategy(PersonToCsvHeaderMappingStrategy())
             val beanToCsv = beanToCsvBuilder.build()
             beanToCsv.write(people)
             writer.flush()

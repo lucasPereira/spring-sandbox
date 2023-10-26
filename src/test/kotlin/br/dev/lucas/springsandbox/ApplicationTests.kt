@@ -1,4 +1,4 @@
-package br.dev.lucas.spring.sandbox
+package br.dev.lucas.springsandbox
 
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest

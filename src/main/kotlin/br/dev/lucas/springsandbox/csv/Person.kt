@@ -1,4 +1,4 @@
-package br.dev.lucas.spring.sandbox
+package br.dev.lucas.springsandbox.csv
 
 import com.opencsv.bean.CsvBindByName
 import java.util.Date

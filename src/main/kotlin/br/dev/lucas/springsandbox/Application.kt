@@ -1,4 +1,4 @@
-package br.dev.lucas.spring.sandbox
+package br.dev.lucas.springsandbox
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
