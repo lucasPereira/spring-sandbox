@@ -24,6 +24,7 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 
 	implementation("com.opencsv:opencsv:5.7.1")
+	implementation("com.sendgrid:sendgrid-java:4.8.2")
 
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
 }
